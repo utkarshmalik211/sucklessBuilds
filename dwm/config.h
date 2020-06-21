@@ -20,6 +20,7 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = {
 	"Mononoki Nerd Font:size=10:antialias=true:autohint=true",
+	"Font Awesome 5 Free:style=Regular:size=13",
 	"JoyPixels:style=Regular:size=10:antialias=true:autohint=true",
         "Hack:size=8:antialias=true:autohint=true"
         };
@@ -105,7 +106,7 @@ static const char *audio_next[] = { "~/scripts/sp", "next", NULL };
 
 static const char *lock[] = { "/home/utkarsh/scripts/lockSuspend", NULL };
 static const char *power_menu[] = {"/home/utkarsh/scripts/dmenuScripts/power.sh", NULL };
-static const char *browser[] = {"firefox-bin", "--new-instance", "--ProfileManager", NULL };
+static const char *browser[] = {"firefox", "--new-instance", "--ProfileManager", NULL };
 static const char *filemanager[] = {"st", "-e", "ranger", NULL };
 static const char *emoji[] = {"/home/utkarsh/scripts/dmenuScripts/emoji.sh", "NULL"};
 static const char *wifi[] = {"/home/utkarsh/scripts/dmenuScripts/networkmanager_dmenu", NULL};
