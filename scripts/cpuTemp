@@ -1,0 +1,1 @@
+echo $(sensors | grep -i "temp" | awk '{print $2}'| xargs | cut -d ' ' -f 2,3)

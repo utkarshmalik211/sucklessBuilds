@@ -1,0 +1,6 @@
+#! /bin/bash
+setxkbmap -option caps:escape &
+picom --experimental-backends --detect-rounded-corners &
+xautolock -time 10 -locker slock &
+unclutter &
+exec -a 'dwmbar' ~/scripts/dwmbar &

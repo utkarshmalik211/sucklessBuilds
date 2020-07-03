@@ -20,7 +20,7 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = {
 	"Mononoki Nerd Font:size=10:antialias=true:autohint=true",
-	"Font Awesome 5 Free:style=Regular:size=13",
+	"Font Awesome 5 Free Regular:style=Regular",
 	"JoyPixels:style=Regular:size=10:antialias=true:autohint=true",
         "Hack:size=8:antialias=true:autohint=true"
         };

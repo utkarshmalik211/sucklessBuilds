@@ -1,0 +1,18 @@
+#!/bin/sh
+
+# Show wifi 📶 and percent strength or 📡 if none.
+# Show 🌐 if connected to ethernet or ❎ if none.
+
+case $BLOCK_BUTTON in
+	1) setsid "$TERMINAL" -e nmtui & ;;
+	3) notify-send "🌐 Internet module" "\- Click to connect
+📡: no wifi connection
+📶: wifi connection with quality
+❎: no ethernet
+🌐: ethernet working
+" ;;
+esac
+
+
+
+printf "%s %s\n" "$(sed "s/down/❎/;s/up/🌐/" /sys/class/net/wlo1/operstate)" "$(iw wlo1 info | grep -i ssid | awk '{print $2}')" 

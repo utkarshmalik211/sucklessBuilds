@@ -1,0 +1,13 @@
+#! /bin/bash
+bar() {
+	xsetroot -name "🔥$(~/scripts/cpuTemp) $(~/scripts/memory) $(~/scripts/volume) $(~/scripts/internet) $(~/scripts/battery) $(~/scripts/clock)";
+}
+
+trap 'bar' 5
+
+while :; do
+	bar
+	sleep 10 
+done 
+
+
